@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .button {
+        @apply h-5 w-5 cursor-pointer text-gray-300 hover:scale-125 transition transform duration-100  ease-out;
+    }
+
+    .webkit-slider-thumb {
+       @apply  bg-white;
+    }
+
+    .slider::-moz-range-thumb {
+        @apply bg-white hover:bg-black;
+    }
+}
