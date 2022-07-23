@@ -16,7 +16,7 @@ import { debounce } from "lodash";
 import useSpotify from "../hooks/useSpotify";
 
 function player() {
-  const { data: Session } = useSession();
+  const { data: session } = useSession();
   const [volume, setVolume] = useState(50);
   const spotifyApi = useSpotify();
   const [isPlaying, setIsPlaying] = useRecoilState(isPlayingState);
@@ -68,7 +68,7 @@ function player() {
       fetchCurrentSong();
       setVolume(50);
     }
-  }, [currentTrackIdState, spotifyApi, Session]);
+  }, [currentTrackIdState, spotifyApi, session]);
   return (
     <div className="h-24 bg-gradient-to-b from-black to bg-gray-900 text-white grid grid-cols-3  text-xs md:text-base px-2 md:px-8">
       {/* left */}
