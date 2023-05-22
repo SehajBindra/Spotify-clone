@@ -13,7 +13,7 @@ function Login({ providers }) {
                 className=" bg-[#18d860]  text-white p-5 rounded-lg"
                 onClick={() => signIn(provider.id, { callbackUrl: "/" })}
               >
-                Login with{provider.name}
+                Login with {provider.name}
               </button>
             </div>
           ))}
