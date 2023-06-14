@@ -43,7 +43,6 @@ export default function Home() {
       </div>
     );
   }
-  return;
 }
 
 export async function getServerSideProps(context) {
