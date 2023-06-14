@@ -19,7 +19,7 @@ export default function Home() {
     return (
       <div>
         <Head>
-          <title>Spotify</title>
+          <title>Spotify-clone</title>
           <meta
             name="google-site-verification"
             content="G7ytNgKJpYbuIlMLvcDW4lq9h1FZC6ez3XPjL2EgwSg"
